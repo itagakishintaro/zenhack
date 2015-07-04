@@ -1,6 +1,6 @@
 'use strict';
 
-var LEVEL = ['負けた', '妥協した', '勝った'];
+var LEVEL = ['できなかった', 'できた'];
 
 $(function() {
 	drawLine();
@@ -13,14 +13,14 @@ $(function() {
 
 var chartData = [
     ['x', '2015-06-08', '2015-06-09', '2015-06-10', '2015-06-11', '2015-06-12', '2015-06-13', '2015-06-14'],
-    ['戒律1', 2, 0, 2, 1, 2, 0, 0],
-    ['戒律2', 0, 0, 2, 0, 0, 0, 2],
-    ['戒律3', 0, 2, 2, 0, 1, 2, 2],
-    ['戒律4', 0, 2, 1, 0, 2, 2, 2],
-    ['戒律5', 0, 2, 2, 0, 1, 2, 2],
-    ['戒律6', 0, 2, 0, 0, 1, 2, 2],
-    ['戒律7', 0, 2, 2, 0, 2, 2, 2],
-    ['戒律8', 0, 2, 2, 0, 1, 2, 2]
+    ['ケーキを食べない', 1, 0, 1, 1, 1, 0, 0],
+    ['カップラーメンを食べない', 0, 0, 1, 0, 0, 0, 1],
+    ['お酒を控える', 0, 1, 1, 0, 1, 1, 1],
+    ['コーヒーを飲まない', 0, 1, 1, 0, 1, 1, 1],
+    ['おやつを食べない', 0, 1, 1, 0, 1, 1, 1],
+    ['夕食後にヨガをする', 0, 1, 0, 0, 1, 1, 1],
+    ['間食をしない', 0, 1, 1, 0, 1, 1, 1],
+    ['夕食に有機野菜を使用する', 0, 1, 1, 0, 1, 1, 1]
 ];
 
 function drawLine() {
@@ -46,10 +46,15 @@ function drawLine() {
 }
 
 function drawPie(i) {
+    var target = '#pie' + i
+
     var chart = c3.generate({
-        bindto: '#pie' + i,
+        bindto: target,
         size: {
           width: 150
+        },
+        color: {
+          pattern: ['#aec7e8', '#1f77b4']
         },
         data: {
             columns: createPieData(i),
@@ -59,6 +64,13 @@ function drawPie(i) {
             onmouseout: function (d, i) { console.log("onmouseout", d, i); }
         }
     });
+
+    d3.select(target + ' svg').append('text')
+        .attr('x', d3.select(target + ' svg').node().getBoundingClientRect().width / 2)
+        .attr('y', 50)
+        .attr('text-anchor', 'middle')
+        .style('font-size', '.8rem')
+        .text(chartData[i][0]);
 }
 
 function createPieData(pieId){
