@@ -1,4 +1,4 @@
-var selectTop = "/select/";
+var selectTop = "index.html";
 var maxCommand = 8;
 
 var fillSlot = function(){
