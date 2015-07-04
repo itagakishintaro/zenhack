@@ -1,7 +1,14 @@
 'use strict';
 
 $('#yes').on('click', function(){
+	$(".box").text();
+	$(".box").text("いいね");
 	change();
+});
+
+$('#no').on('click', function(){
+	$(".box").text();
+	$(".box").text("戒を破らないでね");
 });
 
 function change() {
@@ -12,15 +19,5 @@ function change() {
 			$('img.chara').removeClass('animated zoomIn');
 		});
 	});
-	
 
-	
-	// setTimeout(function(){
-	// 	$('img.chara').prop('src','images/sad.jpg');
-	// } , 500);
-	
-	// $('img.chara').stop().animate({ opacity:0, top:-100 }, 300, 'easeInBack', function() {
-	// 	$(this).prop('src','images/sad.jpg').delay(500).animate({ opacity:1, top: 300 }, 300, 'easeOutBounce');
-	// 	return false;	
-	// });
 }
