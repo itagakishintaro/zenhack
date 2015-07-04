@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/jquery.mobile-1.4.5.min.css">
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+      <h1>戒律を選ぶ</h1>
+    </div><!-- /header -->
+    <div data-role="content" id="content">
+      <ul data-role="listview" data-child-pages="true">
+        <li>
+          <a href="#genre" id="slot0" onclick="selectSlot(0);"><h1>目標1</h1></a>
+        </li>
+        <li>
+          <a href="#genre" id="slot1" onclick="selectSlot(1);"><h1>目標2</h1></a>
+        </li>
+        <li>
+          <a href="#genre" id="slot2" onclick="selectSlot(2);"><h1>目標3</h1></a>
+        </li>
+        <li>
+          <a href="#genre" id="slot3" onclick="selectSlot(3);"><h1>目標4</h1></a>
+        </li>
+        <li>
+          <a href="#genre" id="slot4" onclick="selectSlot(4);"><h1>目標5</h1></a>
+        </li>
+        <li>
+          <a href="#genre" id="slot5" onclick="selectSlot(5);"><h1>目標6</h1></a>
+        </li>
+        <li>
+          <a href="#genre" id="slot6" onclick="selectSlot(6);"><h1>目標7</h1></a>
+        </li>
+        <li>
+          <a href="#genre" id="slot7" onclick="selectSlot(7);"><h1>目標8</h1></a>
+        </li>
+      </ul>
+      <br/><br/>
+      <button id="injectList">Add Dynamic List</button>
+    </div><!-- /content -->
+  </div><!-- /page -->
+  <div data-role="page" id="genre">
+    <div data-role="header">
+      <a href="" data-rel="back">back</a>
+      <h1>ジャンルを選ぶ</h1>
+    </div><!-- /header -->
+    <div data-role="content" id="content">
+      <ul data-role="listview">
+        <li><a href="#genre1">健康に良い</a></li>
+        <li><a href="#genre2">ダイエット</a></li>
+      </ul>
+    </div><!-- /content -->
+  </div><!-- /page -->
+
+  <div data-role="page" id="genre1">
+    <div data-role="header">
+      <a href="#" data-rel="back">back</a>
+      <h1>健康に良い</h1>
+    </div><!-- /header -->
+    <div data-role="content" id="content">
+      <ul data-role="listview">
+        <li class="command">ケーキを食べない</li>
+        <li class="command">デザートを食べない</li>
+        <li class="command">甘いものを食べない</li>
+        <li class="command">カップラーメンを食べない</li>
+      </ul>
+    </div><!-- /content -->
+  </div><!-- /page -->
+  <div data-role="page" id="genre2">
+    <div data-role="header">
+      <a href="#" data-rel="back">back</a>
+      <h1>ダイエット</h1>
+    </div><!-- /header -->
+    <div data-role="content" id="content">
+      <ul data-role="listview">
+        <li class="command">少食</li>
+        <li class="command">二郎行かない</li>
+      </ul>
+    </div><!-- /content -->
+  </div><!-- /page -->
+
+
+  <script src="/js/jquery-2.1.3.min.js"></script>
+  <script src="/js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="/js/jquery.mobile.nestedlists.js"></script>
+  <script src="/js/select.js"></script>
+</body>
+</html>
+
