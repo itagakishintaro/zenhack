@@ -11,8 +11,34 @@
 </head>
 <body>
 	<div class="small-header cx">
-		<h1 class="small-header__left"><a href="index.html"><img src="images/logo-s.png" alt="" width="145" height="85"></a></h1>
-		<!-- <div class="small-header__right"><img src="images/small-header__edit.png" alt="" width="175" height="85"></div> -->
+		<h1 class="small-header__left"><a href="top.html"><img src="images/logo-s.png" alt="" width="145" height="85"></a></h1>
+		<div class="small-header__right">
+			<span id="weather"><img src="" alt="" style="width: 45px; height: 45px; margin: 20px 20px 0 0"></span>
+	<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/weather.js"></script>
+<script type="text/ecmascript">
+<!--
+var mapping = {
+  '雨時々止む': 34
+};
+fetchWeather(function(weather){
+  if(mapping[weather] == null){
+    return;
+  }
+
+  var url = "images/weather/" + mapping[weather] + ".png";
+  console.log(url);
+  var imgPreloader = new Image();
+  imgPreloader.onload = function() {
+    $("#weather").children("img").attr({'src':url});
+  }
+  imgPreloader.src=url;
+});
+-->
+</script>
+
+
+		</div>
 	</div>
 	<nav class="nav">
 		<div class="nav__edit"><a href="select.html">戒設定</a></div>
@@ -34,7 +60,6 @@
 <!-- 	<div id="config" class="config">設定</div>
 	<div id="chart" class="chart">グラフをみる</div>
  -->
-	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/index.js"></script>
 </body>
