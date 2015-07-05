@@ -30,6 +30,8 @@ while(($cols = fgetcsv($fp)) != false){
   $lineCount++;
 }
 
+fclose($fp);
+
 $htmls = "";
 
 $genreCount = 0;

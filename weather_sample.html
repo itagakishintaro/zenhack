@@ -5,11 +5,25 @@
     <title>8kai-sai</title>
   </head>
   <body>
+    <div id="weather">
+      <img width="40px"/>
+    </div>
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/weather.js"></script>
   <script type="text/ecmascript">
 <!--
-    fetchWeather(function(weather){console.log(weather)});
+var mapping = {
+  '雨時々止む': 34
+};
+fetchWeather(function(weather){
+  var url = "images/weather/" + mapping[weather] + ".png";
+  console.log(url);
+  var imgPreloader = new Image();
+  imgPreloader.onload = function() {
+    $("#weather").children("img").attr({'src':url});
+  }
+  imgPreloader.src=url;
+});
 -->
   </script>
   </body>
