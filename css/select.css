@@ -1,0 +1,31 @@
+.column {
+	height: 3em;
+	line-height: 3em;
+	border-color: brown !important;
+}
+
+.goal {
+	color: brown;
+}
+
+.blank {
+	color: lightgray;
+	font-size: .8em;
+	margin-left: 1em;
+}
+
+.next-icon {
+	width: 3rem;
+	float: right;
+}
+
+.ui-icon-carat-r:after {
+ 	background-image: url("../images/normal.jpg");
+ 	background-size: 3em 3em;
+ 	background-repeat: no-repeat;
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
