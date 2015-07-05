@@ -1,4 +1,4 @@
-var selectTop = "index.html";
+var selectTop = "select.html";
 var maxCommand = 8;
 
 var fillSlot = function(){
@@ -7,7 +7,7 @@ var fillSlot = function(){
   for(var i = 0; i < maxCommand; i++){
     var slotId = "#slot" + i.toString();
     if(slots[i] != null){
-      $(slotId).html("<h1>" + slots[i]  + "</h1>");
+      $(slotId).html(slots[i]);
     }
   }
 }
