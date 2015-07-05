@@ -1,0 +1,47 @@
+* {
+	color: brown !important;
+	font-weight: 100 !important;
+	text-shadow: 0 0 0 rgba(255, 255, 255 ,0) !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+.column {
+	height: 3em;
+	line-height: 3em;
+	border-bottom: solid 1px brown;
+}
+
+
+.blank {
+	color: lightgray !important;
+	font-size: .8em;
+	margin-left: 1em;
+}
+
+.next-icon {
+	margin-top: 1em;
+	width: 1.5em;
+	float: right;
+}
+
+.ui-icon-carat-r:after {
+ 	background-image: url("../images/normal.jpg");
+ 	background-size: 3em 3em;
+ 	background-repeat: no-repeat;
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+	background-color: rgba(0, 0, 0 ,0);
+}
+
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
+	background-color: rgba(0, 0, 0 ,0) !important;
+}

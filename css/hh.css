@@ -3,7 +3,7 @@ html, body {
   padding: 0;
 }
 body {
-  background: url(../images/bg.jpg) 0 0 no-repeat #ffff7d;
+  background: url(../images/bg.jpg) 0 0 no-repeat #ffff7d !important;
 }
 h1, h2, h3 {
   margin: 0;
