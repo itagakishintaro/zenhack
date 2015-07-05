@@ -2,13 +2,13 @@
 
 $('#yes').on('click', function(){
 	$(".box").text();
-	$(".box").text("いいね！");
+	$(".box").html("甘露の門は開かれたり　耳ある者は聞け。<div style='font-size: 14px; line-height: 1.5; margin-top: 10px;'>（お釈迦様がはじめて説法を決意した際のお言葉）</div>");
 	change('images/kai--happy.png');
 });
 
 $('#no').on('click', function(){
 	$(".box").text();
-	$(".box").text("戒を破らないでね");
+	$(".box").html("耳鼻舌身意無色声香味触法無眼界乃至<div style='font-size: 14px; line-height: 1.5; margin-top: 10px;'>舌で感じる「味」、鼻で感じる「香り」人それぞれでしょう。自分の感覚なんて、拘りなんて、「幻」のようなものです。そこに拘っても、何のあてにもなりません。</div>");
 	change('images/kai--sad.png');
 });
 
