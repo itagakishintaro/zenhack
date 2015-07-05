@@ -1,0 +1,77 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(../images/bg.jpg) 0 0 no-repeat #ffff7d;
+}
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: bottom;
+}
+.cx {
+  *zoom: 1;
+}
+.cx:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* start header or footer css */
+
+.small-header {
+  background: #fff;
+  border-bottom: 3px solid #545454;
+}
+
+.small-header__left {
+  float: left;
+}
+
+.small-header__right {
+  float: right;
+}
+
+.nav {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 144px;
+}
+.nav__edit,
+.nav__stat {
+  height: 62px;
+  float: left;
+  width: 62px;
+  /*position: absolute;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  /*width: 62px;*/
+}
+.nav__stat {
+  float: right;
+  right: 102px;
+}
+.nav__edit > a,
+.nav__stat > a{
+  background: url(../images/circle__edit.png) 0 0 no-repeat;
+  background-size: 62px 62px;
+  display: block;
+  height: 62px;
+  overflow: hidden;
+  text-indent: -4000px;
+  width: 62px;
+}
+.nav__stat > a{
+  background: url(../images/circle__stat.png) 0 0 no-repeat;
+  background-size: 62px 62px;
+}
+
+.select-bar {
+  background: rgba(255, 255, 255, .3);
+}
+
