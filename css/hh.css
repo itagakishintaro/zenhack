@@ -47,6 +47,7 @@ button {
   right: 20px;
   bottom: 20px;
   width: 144px;
+  z-index: 100;
 }
 .nav__edit,
 .nav__stat {
