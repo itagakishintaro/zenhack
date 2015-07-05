@@ -3,7 +3,9 @@ html, body {
   padding: 0;
 }
 body {
-  background: url(../images/bg.jpg) 0 0 no-repeat #ffff7d !important;
+  background: url(../images/bg.jpg) 0 0 no-repeat #ffff7d;
+  background-size: 320px 568px;
+  background-attachment: fixed;
 }
 h1, h2, h3 {
   margin: 0;
