@@ -41,14 +41,12 @@ foreach($genres as $genre => $commands){
       <h1>{$genre}</h1>
     </div><!-- /header -->
     <div data-role="content" id="content">
-      <ul data-role="listview">
 EOT;
   foreach($commands as $command){
-    $html .= "<li class=\"command\"$command</li>\n";
+    $html .= "<div class=\"command column\">$command</div>\n";
   }
 
   $footer =<<<EOT
-  </ul>
     </div><!-- /content -->
   </div><!-- /page -->
 EOT;

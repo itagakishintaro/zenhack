@@ -40,7 +40,12 @@ function drawLine() {
                 tick: {
                     format: '%Y-%m-%d'
                 }
-            }
+            },
+            y: {
+                tick: {
+                    values: [0, 1]
+                }
+            },
         }
     });
 }
@@ -51,10 +56,10 @@ function drawPie(i) {
     var chart = c3.generate({
         bindto: target,
         size: {
-          width: 150
+          width: 200
         },
         color: {
-          pattern: ['#aec7e8', '#1f77b4']
+          pattern: ['#aeaeae', '#db339a']
         },
         data: {
             columns: createPieData(i),
@@ -66,10 +71,12 @@ function drawPie(i) {
     });
 
     d3.select(target + ' svg').append('text')
-        .attr('x', d3.select(target + ' svg').node().getBoundingClientRect().width / 2)
-        .attr('y', 50)
-        .attr('text-anchor', 'middle')
-        .style('font-size', '.8rem')
+        .attr('x', 0)
+        // .attr('x', d3.select(target + ' svg').node().getBoundingClientRect().width / 2)
+        .attr('y', 20)
+        // .attr('text-anchor', 'middle')
+        .style('font-size', '1rem')
+        .attr('fill', '#786057')
         .text(chartData[i][0]);
 }
 
