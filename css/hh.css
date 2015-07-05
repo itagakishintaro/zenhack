@@ -11,6 +11,10 @@ h1, h2, h3 {
 }
 img {
   vertical-align: bottom;
+  border: 0px;
+}
+button {
+  border: 0px;
 }
 .cx {
   *zoom: 1;

@@ -1,25 +1,51 @@
 .chara {
 	position: absolute;
-	bottom: 0;
-	width: 400px;
+	left: 124px;
+	top: 322px;
+
+	height: 137px;
+	width: 235px;
 }
 
 .bubble {
 	position: absolute;
-	bottom: 0;
-	left: 0rem;
-	width: 20rem;
-	height: 30rem;
-	padding-top: 2rem;
-	padding-left: 2rem;
-	font-size: 1rem;
-	background-image: url("../images/bubble.png");
-	background-size:contain;
+	top: 108px;
+	left: 12px;
+	/*width: 20rem;*/
+	/*height: 30rem;*/
+	width: 262px;
+	height: 289px;
+
+	background-image: url("../images/baloon.png");
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
+.bubble .box {
+	padding: 25px 25px 0;
+	font-size: 18px;
+	/*font-weight: bold;*/
+}
+.bubble .box p {
+	margin: 0 0 20px;
+	padding: 0;
+	line-height: 1.6;
+}
 
+.bubble #yes {
+	background: url(../images/button__yes.png) 0 0 no-repeat;
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+}
 
+.bubble #no {
+	background: url(../images/button__no.png) 0 0 no-repeat;
+	background-size: 87px 87px;
+	margin-left: 10px;
+	width: 87px;
+	height: 87px;
+}
 
 /*フッター*/
 .config {
